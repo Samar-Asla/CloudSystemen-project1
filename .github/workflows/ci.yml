@@ -12,9 +12,10 @@ jobs:
     steps:
       - uses: https://code.forgejo.org/actions/checkout@v4
 
-      - name: Deploy
+      - name: Deploy on VPS
         run: |
-          ls -la
+          cd /root/CloudSystemen-project1
+          git pull
           docker compose down
           docker compose build --no-cache
           docker compose up -d
