@@ -1,3 +1,3 @@
-http://samarasla-project.duckdns.org {
+samarasla-project.duckdns.org {
     reverse_proxy node_app:3000
 }
