@@ -124,11 +124,19 @@ nav a:hover {
 }
 
 .card {
+  /* background: #1e293b;
+  padding: 25px;
+  border-radius: 16px;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background: #1e293b;
   padding: 25px;
   border-radius: 16px;
   transition: 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .card:hover {
@@ -145,6 +153,7 @@ nav a:hover {
 .card p {
   color: #e2e8f0;
   line-height: 1.7;
+  margin-bottom: 15px;
 }
 
 /* CONTACT */
@@ -154,7 +163,51 @@ nav a:hover {
   margin: auto;
   text-align: center;
 }
+#contact a:hover {
+  text-decoration: underline;
+}
+.tech-stack {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #38bdf8;
+  opacity: 0.85;
+  margin-bottom: 10px;
+}
 
+.project-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.btn-demo {
+  display: block;
+  text-align: center;
+  background: #38bdf8;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: 0.3s ease;
+}
+.btn-demo:hover {
+  background: #0ea5e9;
+  transform: translateY(-2px);
+}
+
+.btn-demo.sec {
+  background: transparent;
+  color: #38bdf8;
+  border: 2px solid #38bdf8;
+}
+
+.btn-demo.sec:hover {
+  background: rgba(56, 189, 248, 0.1);
+  color: white;
+}
 /* FOOTER */
 
 footer {
@@ -171,7 +224,6 @@ footer p {
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
-
   nav {
     flex-direction: column;
     gap: 20px;
@@ -189,5 +241,4 @@ footer p {
   .section h2 {
     font-size: 2rem;
   }
-
 }
